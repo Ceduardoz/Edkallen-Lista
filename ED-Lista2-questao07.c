@@ -1,3 +1,10 @@
+/*
+Função: Aeroporto
+autor: Carlos Eduardo
+Data: 31/05/2025
+Observações: 
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
