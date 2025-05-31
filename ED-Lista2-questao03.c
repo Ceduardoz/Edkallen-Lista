@@ -43,13 +43,13 @@ void lerAeroporto(Aeroporto *a) {
     scanf("%d", &a->capacidade);
 }
 
-// exibir todos os aeroportos
+// exibir os aeroportos
 void exibirAeroporto(Aeroporto *a) {
     printf("\nSigla: %s\nCidade: %s\nPaís: %s\nTaxa: %.2f\nCapacidade: %d\n",
            a->sigla, a->cidade, a->pais, a->taxa, a->capacidade);
 }
 
-// excluir algum aeroporto pelo indice
+// excluir aeroporto pelo indice
 void excluirAeroporto(Aeroporto **aeroportos, int *total, int indice) {
     if (indice < 0 || indice >= *total) {
         printf("Índice inválido!\n");

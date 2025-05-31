@@ -7,11 +7,10 @@ Observações:
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 #define TAMANHO 10
 
-// Função para organizar a lista
+// selectionSort
 void selectionSort(int lista[], int tamanho) {
     int i, menorValor, troca;
     int k = 0;
@@ -32,8 +31,8 @@ void selectionSort(int lista[], int tamanho) {
     }
 }
 
-// Função para imprimir a lista
-void imprimirlista(int lista[], int tamanho) {
+// exibe a lista
+void exibeLista(int lista[], int tamanho) {
     for (int i = 0; i < tamanho; i++) {
         printf("%d ", lista[i]);
     }
@@ -41,27 +40,15 @@ void imprimirlista(int lista[], int tamanho) {
 }
 
 int main() {
-    int lista[TAMANHO];
-    srand(time(NULL));
-
-    lista[0] = 43;
-    lista[1] = 55;
-    lista[2] = 22;
-    lista[3] = 666;
-    lista[4] = 14;
-    lista[5] = 4;
-    lista[6] = 6;
-    lista[7] = 37;
-    lista[8] = 56;
-    lista[9] = 64;
+    int lista[TAMANHO] = {14, 58, 76, 0, 7, 4, 22, 44, 36, 69};
 
     printf("Lista original:\n");
-    imprimirlista(lista, TAMANHO);
+    exibeLista(lista, TAMANHO);
 
     selectionSort(lista, TAMANHO);
 
     printf("Lista ordenada:\n");
-    imprimirlista(lista, TAMANHO);
+    exibeLista(lista, TAMANHO);
 
     return 0;
 }
