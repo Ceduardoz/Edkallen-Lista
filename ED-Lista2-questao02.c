@@ -9,7 +9,6 @@ Observações:
 #include <stdlib.h>
 #include <string.h>
 
-// Estrutura do empregado
 typedef struct {
     char nome[50];
     char dataNascimento[11];
@@ -18,12 +17,10 @@ typedef struct {
     float salario;
 } Empregado;
 
-
-Empregado *empregados = NULL;  
-int total = 0;                 // Contador de empregados
+Empregado *empregados = NULL;
+int total = 0;
 
 void adicionarEmpregado() {
-    // Realoca memória para mais um empregado
     empregados = realloc(empregados, (total + 1) * sizeof(Empregado));
     
     printf("\nNome: ");
@@ -74,9 +71,7 @@ void excluirEmpregado() {
         return;
     }
     
-    indice--;  // Converte para índice do array
-    
-    // Move elementos para remover o selecionado
+    indice--;
     for (int i = indice; i < total - 1; i++) {
         empregados[i] = empregados[i + 1];
     }
@@ -104,6 +99,6 @@ int main() {
         }
     } while (opcao != 4);
     
-    free(empregados);  // Libera memória
+    free(empregados);
     return 0;
 }
