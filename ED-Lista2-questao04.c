@@ -8,7 +8,7 @@ Observações:
 #include <stdio.h>
 #include <stdbool.h>
 
-// função para verificar se um número é primo
+// Função para verificar se um número é primo
 bool ehPrimo(int n) {
     if (n <= 1) return false;
     if (n <= 3) return true;
@@ -21,7 +21,7 @@ bool ehPrimo(int n) {
     return true;
 }
 
-// função para encontrar e imprimir os dois primos que somam o número par
+// Função para encontrar e imprimir os dois primos que somam o número par
 void encontrarPrimos(int num) {
     for (int i = 2; i <= num / 2; i++) {
         int j = num - i;
@@ -31,7 +31,7 @@ void encontrarPrimos(int num) {
             return;
         }
     }
-    // se chegou aqui, não encontrou (seria um contra-exemplo)
+    // Se chegou aqui, não encontrou (seria um contra-exemplo)
     printf("%d: CONTRA-EXEMPLO ENCONTRADO!\n", num);
 }
 
@@ -45,7 +45,7 @@ int main() {
         encontrarPrimos(num);
         contador++;
         
-        // quebra de linha a cada 10 números para melhor visualização
+        // Quebra de linha a cada 10 números para melhor visualização
         if (contador % 10 == 0) {
             printf("\n");
         }
