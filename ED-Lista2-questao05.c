@@ -1,6 +1,6 @@
 /*
 Função: Conjectura de Goldbach com entrada do usuário
-Autor: Davi Vidal
+Autor: Carlos Eduardo
 Data: 01/06/2025
 Observações: 
 */
