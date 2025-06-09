@@ -1,7 +1,7 @@
 /*
 Função: Conjectura de Goldbach
 autor: Davi Vidal
-Data: 01/06/2025
+Data: 31/06/2025
 Observações:
 */
 
